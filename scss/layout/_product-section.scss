@@ -1,0 +1,33 @@
+.product-section {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 160px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 122px;
+    height: 105px;
+    background-image: url('../img/pngfind-blog.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: ' ';
+    z-index: 2;
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+  }
+
+  &__container {
+    overflow: hidden;
+  }
+
+  &__list {
+    margin-bottom: 20px;
+  }
+}

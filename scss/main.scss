@@ -1,0 +1,31 @@
+@import './utils/fonts.scss';
+@import './base.scss';
+@import './utils/variables.scss';
+@import './utils/texts';
+@import './utils/utils';
+
+@import './componets/blog-card';
+@import './componets/button';
+@import './componets/card-product';
+@import './componets/carousel-button';
+@import './componets/input';
+@import './componets/new-card';
+@import './componets/pagination';
+@import './componets/reviews-card';
+@import './componets/star-prouct-card';
+
+@import './layout/about-section';
+@import './layout/ads-card';
+@import './layout/blog-section';
+@import './layout/container';
+@import './layout/deals-section';
+@import './layout/footer';
+@import './layout/header';
+@import './layout/hero-section';
+@import './layout/module';
+@import './layout/new-section';
+@import './layout/product-section';
+@import './layout/rewiews';
+@import './layout/service-section';
+@import './layout/star-product-section';
+@import './layout/subscribe';

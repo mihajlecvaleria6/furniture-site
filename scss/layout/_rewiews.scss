@@ -1,0 +1,45 @@
+.reviews-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-secondary-light);
+
+  &::after,
+  &::before {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    z-index: 2;
+  }
+
+  &::after {
+    top: 0;
+    left: 20px;
+    height: 110px;
+    width: 148px;
+    background-image: url('../img/review-dot.png');
+  }
+  &::before {
+    top: 200px;
+    margin: 0 auto;
+    height: 289px;
+    width: 1856px;
+    background-image: url('../img/review-arrow.png');
+    z-index: 1;
+  }
+
+  &__container {
+    padding-top: 73px;
+    padding-bottom: 80px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
+    box-sizing: calc((100% - 30px) / 3);
+  }
+}

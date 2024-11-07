@@ -1,0 +1,87 @@
+.header {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  padding-top: 20px;
+  z-index: 1;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__contact {
+    display: flex;
+  }
+
+  &__container-menu {
+    padding-top: 30px;
+  }
+
+  &__icons {
+    display: flex;
+  }
+
+  &__headphones {
+    width: 30px;
+    height: 30px;
+  }
+
+  &__tell {
+    font-style: normal;
+    text-decoration: none;
+    color: var(--color-primary-dark);
+    margin-right: 60px;
+  }
+
+  &__text {
+    font-style: oblique;
+    font-weight: bold;
+  }
+
+  &__container-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icons {
+    gap: 31px;
+    margin-left: 518px;
+  }
+
+  &__icon {
+    fill: var(--color-primary-dark);
+    background-color: transparent;
+  }
+
+  &__button {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__logo {
+    background-color: var(--color-primary-dark);
+    color: var(--color-primary-light);
+    padding: 12px 48px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 45px;
+    font-size: 34px;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 50px;
+  }
+
+  &__link {
+    color: gray;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--color-primary-dark);
+    }
+  }
+}

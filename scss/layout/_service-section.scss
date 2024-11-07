@@ -1,0 +1,62 @@
+.service-section {
+  position: relative;
+  width: 1680px;
+  height: 308px;
+  background-color: var(--color-secondary-light);
+  border-radius: 30px;
+  display: block;
+  margin: 500px auto 80px;
+
+  &::after,
+  &::before {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    z-index: 2;
+  }
+
+  &::after {
+    top: -380px;
+    left: 350px;
+    height: 415px;
+    width: 956px;
+    background-image: url('../img/sofa.png');
+  }
+
+  &::before {
+    top: -250px;
+    left: -200px;
+    width: 132px;
+    height: 232px;
+    background-image: url('../img/service-lines.png');
+  }
+
+  &__container {
+    padding: 121px 200px;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 155px;
+  }
+
+  &__item {
+    display: flex;
+    text-align: left;
+    gap: 20px;
+  }
+
+  &__title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    font-size: 14px;
+  }
+
+  &__icon {
+    fill: var(--color-primary-вфкл);
+  }
+}

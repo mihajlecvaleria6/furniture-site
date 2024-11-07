@@ -1,0 +1,38 @@
+.section-title {
+  font-family: 'Rowdies', sans-serif;
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-size: 76px;
+}
+
+.section-titles {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Rowdies', sans-serif;
+  font-weight: 400;
+  margin-bottom: 32px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 50px;
+    right: 640px;
+    width: 410px;
+    height: 2px;
+    background-image: url('../img/shop-line.png');
+    background-size: cover;
+    z-index: 2;
+    content: '';
+  }
+}
+
+.section-text {
+  text-align: center;
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.text-accent {
+  color: var(--color-light-primary);
+  text-decoration: underline;
+}

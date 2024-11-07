@@ -1,0 +1,47 @@
+.card-product {
+  position: relative;
+  text-align: center;
+  width: 260px;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+
+  &__image {
+    position: absolute;
+    top: 36px;
+  }
+
+  &__title {
+    background-color: var(--color-secondary-gray);
+    border-radius: 30px;
+    padding: 106px 46px 15px;
+    font-size: 22px;
+    font-family: 'Rowdies', sans-serif;
+  }
+
+  &__title-orange {
+    background-color: var(--color-light-primary);
+  }
+
+  &__price {
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: gray;
+    font-weight: 400;
+  }
+
+  &__btn {
+    color: var(--color-primary-dark);
+    margin-bottom: 30px;
+
+    &:hover {
+      color: var(--color-primary-dark);
+    }
+  }
+}

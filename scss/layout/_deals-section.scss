@@ -1,0 +1,57 @@
+.deals-section {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 1520px;
+  height: 767px;
+  border-radius: 50px;
+  border: 1px solid var(--color-secondary-green);
+  background-image: url('../img/about-fon.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 80px;
+
+  &::after,
+  &::before {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    z-index: 2;
+  }
+
+  &::after {
+    top: -60px;
+    right: -100px;
+    height: 294px;
+    width: 10px;
+    background-image: url('../img/chain.png');
+  }
+
+  &::before {
+    width: 132px;
+    height: 216px;
+    bottom: -200px;
+    left: -250px;
+    background-image: url('../img/deals.png');
+  }
+
+  &__container {
+    margin-right: 400px;
+    text-align: center;
+    padding-top: 79px;
+  }
+
+  &__title {
+    font-family: 'Rowdies', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  &__container-image {
+    display: flex;
+    justify-content: center;
+    gap: 72px;
+    margin-bottom: 34px;
+  }
+}

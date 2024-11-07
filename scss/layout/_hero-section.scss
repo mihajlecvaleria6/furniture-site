@@ -1,0 +1,66 @@
+.hero-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-image: url('../img/hero-section.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 80px;
+
+  &::after,
+  &::before {
+    position: absolute;
+    width: 135px;
+    height: 130px;
+    background-image: url('../img/home-points.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: ' ';
+    z-index: 2;
+  }
+
+  &::after {
+    bottom: 50px;
+    left: 400px;
+  }
+
+  &::before {
+    top: 250px;
+    left: 640px;
+  }
+
+  &__container {
+    position: relative;
+    width: 660px;
+    padding: 330px 0px 330px;
+
+    &::after,
+    &::before {
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: ' ';
+      z-index: 2;
+    }
+
+    &::after {
+      top: 150px;
+      left: -200px;
+      width: 250px;
+      height: 250px;
+      background-image: url('../img/header-vector.png');
+    }
+
+    &::before {
+      bottom: 0;
+      right: -600px;
+      width: 282px;
+      height: 280px;
+      background-image: url('../img/vector-container-home.png');
+    }
+  }
+
+  &__text {
+    margin-bottom: 60px;
+  }
+}
